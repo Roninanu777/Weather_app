@@ -12,34 +12,34 @@ function searchWeather(searchCity){
 
 function init(resultFromServer){
     switch (resultFromServer.weather[0].main) {
-        case 'Clear'       :document.body.style.backgroundImage = 'url("img/clear.jpg")';
+        case 'Clear'       :document.body.style.backgroundImage = 'url("clear.jpg")';
                             break;
         
-        case 'Clouds'      :document.body.style.backgroundImage = 'url("img/cloudy.jpg")';
+        case 'Clouds'      :document.body.style.backgroundImage = 'url("cloudy.jpg")';
                             break;
 
-        case 'Rain'        :document.body.style.backgroundImage = 'url("img/rainy.jpg")';
+        case 'Rain'        :document.body.style.backgroundImage = 'url("rainy.jpg")';
                             break;
 
-        case 'Drizzle'     :document.body.style.backgroundImage = 'url("img/drizzle.jpg")';
+        case 'Drizzle'     :document.body.style.backgroundImage = 'url("drizzle.jpg")';
                             break;
 
-        case 'Haze'        :document.body.style.backgroundImage = 'url("img/haze.jpg")';
+        case 'Haze'        :document.body.style.backgroundImage = 'url("haze.jpg")';
                             break;
 
-        case 'Dust'        :document.body.style.backgroundImage = 'url("img/dust.jpg")';
+        case 'Dust'        :document.body.style.backgroundImage = 'url("dust.jpg")';
                             break;
 
-        case 'Mist'        :document.body.style.backgroundImage = 'url("img/mist.jpg")';
+        case 'Mist'        :document.body.style.backgroundImage = 'url("mist.jpg")';
                             break;
 
-        case 'Thunderstorm':document.body.style.backgroundImage = 'url("img/thunderstorm")';
+        case 'Thunderstorm':document.body.style.backgroundImage = 'url("thunderstorm.jpg")';
                             break;
 
-        case 'Snow'        :document.body.style.backgroundImage = 'url("img/snow.jpg")';
+        case 'Snow'        :document.body.style.backgroundImage = 'url("snow.jpg")';
                             break;
 
-        default            :document.body.style.backgroundImage = 'url("img/default.jpg")';
+        default            :document.body.style.backgroundImage = 'url("default.jpg")';
                             break;
     }
     let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
